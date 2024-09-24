@@ -6445,7 +6445,7 @@ namespace Fusion.Editor {
 
     [UnityEditor.InitializeOnLoad]
     public static class ScriptAttributeUtility {
-      public delegate Type GetDrawerTypeForTypeDelegate(Type type);
+      public delegate Type GetDrawerTypeForTypeDelegate(Type type, bool isPropertyTypeAManagedReference = false);
 
       public delegate List<PropertyAttribute> GetFieldAttributesDelegate(FieldInfo field);
 
